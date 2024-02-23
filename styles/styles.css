@@ -3,7 +3,7 @@
 html, body {
     margin: 0;
     padding: 0;
-  }
+}
   
 html {
     font-size: 10px;
@@ -11,7 +11,7 @@ html {
 }
   
 body {
-    width: 70%;
+    width: 100%;
     min-width: 800px;
     margin: 0 auto;
 }
@@ -20,11 +20,27 @@ body {
 /* TIPOGRAPHY */
 
 h1{
-    flex: 5;
+    /* flex: 5; */
     text-transform: uppercase;
     color: white;
     text-align: center;
-    font-size: 50px;
+    font-size: 30px;
+}
+
+h2{
+    text-align: center;
+}
+
+.texto-banner{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+.texto-color{
+    color: rgb(216, 227, 57);
+    text-align: center;
+    font-size: 25px;
 }
 
 /* HEADER */
@@ -36,37 +52,41 @@ header, nav {
 
 header{
     display: flex;
-    flex-flow: row wrap;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
 }
 
 nav {
-    height: 50px;
-    flex: 70%;
     display: flex;
+    flex-grow: 1;
 }
   
 nav ul {
     padding: 0;
     list-style-type: none;
-    flex: 2;
     display: flex;
     font-size: 30px;
+
+    justify-content: space-around; /* Para distribuir los elementos equitativamente */
+    align-items: center;
+
+    width: 100%;
 }
   
 nav li {
-    display: inline;
-    text-align: center;
-    flex: 1;
+    margin-right: 20px;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
 }
   
-nav a, nav span {
-    display: inline-block;
-    font-size: 2rem;
-    height: 3rem;
-    line-height: 0.5;
-    /* text-transform: uppercase; */
+nav a{
+
     text-decoration: none;
     color: black;
+    font-size: 2rem;
   
 }
 
@@ -78,51 +98,71 @@ main{
     position: relative;
 }
 
-.imagen-container {
+.banner-principal {
     position: relative;
     width: 100%;
+    
 }
 
-.imagen-container img {
+.imagen-container{
+    position: relative;
+}
+
+.img-container img{
     width: 100%;
     height: auto; 
 }
 
-.imagen-container .texto-imagen {
+.info-arriba {
+    width: 100%;
+    height: auto;
+}
+
+.texto-banner{
     position: absolute;
-    top: 200px;
-    left: 0px;
-    right: 100px;
-    bottom: 200px;
-    height: 200px;
-    color: white;
+    top: 50%;
+    width: 70%;
+    height: 30%;
+    left: 35%;
+    transform: translate(-50%, -50%); /* Centra el texto exactamente en el centro */
+    background-color: rgba(11, 61, 108, 0.479); 
     text-align: center;
+}
+ 
+.formulario-banner{
+    position: absolute;
+    top: 50%; /* Centra verticalmente el formulario */
+    right: 8%; /* Alinea el formulario a la derecha */
+    transform: translateY(-50%); /* Centra verticalmente el formulario */
+    width: 20%; /* Ancho del formulario */
+    height: 60%;
+    background-color: rgba(255, 255, 255, 0.786);
     padding: 20px;
-    background-color: rgba(11, 61, 108, 0.479);
-    width: 800px; /* Ajusta el ancho del texto según sea necesario */
-    font-size: 25px;
 }
 
-
-.imagen-container .texto2-imagen{
-    position: absolute;
-    top: 100px;
-    right: 100px;
-    bottom: 100px;
-    width: 450px; /* Ancho del nuevo rectángulo */
-    background-color: rgba(255, 255, 255, 0.786); /* Color del nuevo rectángulo */
-    font-size: 25px;
-    text-align: center;
+.formulario-banner label {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 20px;
 }
 
+.formulario-banner input {
+    width: 100%;
+    margin-bottom: 15px;
+}
 
-article{
+.formulario-banner button {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.desp-banner{
     text-align: left;
     background-color: white;
     padding: 1%;
-    font-size: 30px;
-}
-
-.Titulo2{
-    text-align: center;
+    font-size: 30px;   
 }
