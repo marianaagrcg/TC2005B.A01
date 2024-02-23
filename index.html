@@ -1,105 +1,168 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SOLARISON</title>
+/* GENERAL */
 
-  <!-- STYLES -->
-  <link rel="stylesheet" href="styles/styles.css">
-</head>
+html, body {
+    margin: 0;
+    padding: 0;
+}
+  
+html {
+    font-size: 10px;
+    background-color: #a9a9a9;
+}
+  
+body {
+    width: 100%;
+    min-width: 800px;
+    margin: 0 auto;
+}
+  
 
-<body>
-  <!-- HEADER -->
-  <header>
-    <h1>Solarison</h1>
+/* TIPOGRAPHY */
 
-    <!-- NAVEGACION -->
-    <nav>
-      <ul>
-        <li><a href="#">Acerca de nosotros</a></li>
-        <li><a href="#">Modelos</a></li>
-        <li><a href="#">Contrata Servicio</a></li>
-      </ul>
-    </nav>
-  </header>
+h1{
+    /* flex: 5; */
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
 
-  <!-- MAIN -->
-  <main>
+h2{
+    text-align: center;
+}
 
-    <section class="banner-principal">
+.texto-banner{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
 
-      <!-- Imagen principal -->
-      <div class="img-container">
-        <img src="images\img.jpg" alt="Img_Principal">
+.texto-color{
+    color: rgb(216, 227, 57);
+    text-align: center;
+    font-size: 25px;
+}
 
-        <!-- Informaciona rriba de imagen -->
-        <div class="info-arriba">
-          
-        <!-- Texto sobre la imagen -->
-        <div class="texto-banner">
-          <h2>PANELES SOLARES</h2>
-          <p>Instalación de Paneles en todo Sonora.</p>
-          <p class="texto-color">Marca #1 a nivel mundial en Paneles Solares</p>
-        </div>
+/* HEADER */
 
-        <!-- Formulario de contacto -->
-        <div class="formulario-banner">
-          <form action="#">
-            <p>
-              <label for="nompre-apellido"> Nombre y Apellido: </label><br>
-              <input type="text" placeholder="">
-            </p>
+header, nav {
+    background-color: rgba(145, 142, 142, 1);
+    padding: 1%;
+}
 
-            <p>
-              <label for="correo"> Correo: </label><br>
-              <input type="text" placeholder="">
-            </p>
+header{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
 
-            <p>
-              <label for="telefono"> Teléfono: </label><br>
-              <input type="text" placeholder="">
-            </p>
+nav {
+    display: flex;
+    flex-grow: 1;
+}
+  
+nav ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    font-size: 30px;
 
-            <p>
-              <Button>Quiero mas información</Button>
-            </p>
-          </form>
-        </div>
-      </div>
-    </div>
+    justify-content: space-around; /* Para distribuir los elementos equitativamente */
+    align-items: center;
+
+    width: 100%;
+}
+  
+nav li {
+    margin-right: 20px;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+}
+  
+nav a{
+
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+  
+}
+
+/* MAIN */
+
+main{
+    background-color:rgba(217, 217, 217, 1); 
+    padding: 1%;
+    position: relative;
+}
+
+.banner-principal {
+    position: relative;
+    width: 100%;
     
-    </section>
+}
 
-    <!-- Beneficios de los paneles -->
-    <section class="desp-banner">
-      <h2>Beneficios de usar Paneles Solares</h2>
+.imagen-container{
+    position: relative;
+}
 
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
-        Qui distinctio ad odio molestiae harum vero cupiditate voluptatem. <br>
-        Eligendi impedit dolorum ducimus! <br>
-        Numquam esse quod quae quisquam error veritatis assumenda temporibus!
-      </p>
+.img-container img{
+    width: 100%;
+    height: auto; 
+}
 
-      <h4>
-        <a href="index2.html">Estadísticas de Ahorro del panel Solar</a>
-      </h4>
+.info-arriba {
+    width: 100%;
+    height: auto;
+}
 
-      <p>
-        Perspiciatis totam nihil odio, ducimus impedit deleniti provident, <br>
-        est accusamus labore aliquam asperiores perferendis? Saepe tempore commodi <br>
-        eveniet itaque temporibus natus perferendis similique repellat ex necessitatibus fuga quae, soluta laudantium. <br>
-        Magnam sint itaque ea reprehenderit porro sapiente? Culpa maxime reprehenderit tempore, <br>
-        ad at illum voluptas corrupti vitae deleniti facere quam molestias a iste porro qui nihil dolorem minima nulla aut. <br>
-        Cum, consequuntur sint eligendi accusamus veniam iste voluptate incidunt ea quam quia voluptas distinctio <br>
-        amet temporibus autem. In facere eum facilis dolor, voluptate assumenda, quasi est ipsam non omnis dignissimos!
-      </p>
+.texto-banner{
+    position: absolute;
+    top: 50%;
+    width: 70%;
+    height: 30%;
+    left: 35%;
+    transform: translate(-50%, -50%); /* Centra el texto exactamente en el centro */
+    background-color: rgba(11, 61, 108, 0.479); 
+    text-align: center;
+}
+ 
+.formulario-banner{
+    position: absolute;
+    top: 50%; /* Centra verticalmente el formulario */
+    right: 8%; /* Alinea el formulario a la derecha */
+    transform: translateY(-50%); /* Centra verticalmente el formulario */
+    width: 20%; /* Ancho del formulario */
+    height: 60%;
+    background-color: rgba(255, 255, 255, 0.786);
+    padding: 20px;
+}
 
-    </section>
+.formulario-banner label {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
 
-  </main>
+.formulario-banner input {
+    width: 100%;
+    margin-bottom: 15px;
+}
 
-</body>
-</html>
+.formulario-banner button {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
 
+.desp-banner{
+    text-align: left;
+    background-color: white;
+    padding: 1%;
+    font-size: 30px;   
+}
