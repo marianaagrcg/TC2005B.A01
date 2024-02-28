@@ -1,0 +1,260 @@
+/* GENERAL */
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+  
+html {
+    font-size: 10px;
+    /* background-color: rgba(145, 142, 142, 1); */
+    background-color: white;
+}
+  
+body {
+    width: 100%;
+    min-width: 800px;
+    margin: 0 auto;
+}
+
+/* TIPOGRAPHY */
+
+h1{
+    flex: 5;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+/* .general-menu{
+    background-color: rgba(145, 142, 142, 1); 
+    width: 300px;
+    
+} */
+
+
+/* MAIN */
+.general-dash{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+/* MENU */
+.menu{
+    background-color: rgba(145, 142, 142, 1);
+    width: 20%;
+    align-items: center;
+    text-align: center;
+
+    /* display: inline-block;
+    width: 15%;
+    align-items: center;
+    text-align: center;
+    position: relative; 
+    background-color: rgba(145, 142, 142, 1);
+    padding: 1%; */
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: space-around; 
+    padding: 0;
+    /* padding: 0;
+    list-style-type: none;
+    font-size: 30px;
+    justify-content: space-around; 
+    align-items: center;
+    width: 100%; */
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+
+.overview{
+    position: relative;
+    width: 50%;
+    background-color: white;
+    padding-left: 5%;
+    font-size: 20px;
+}
+
+.overview2{
+    position: relative;
+    width: 50%;
+    background-color: white;
+    padding: 1%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.overview-text1, .overview-text2{
+    background-color: rgba(217, 217, 217, 1);
+    width: 80%;
+}
+
+/* SEMICIRCLE */
+
+.semicircles, .rectangles{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 50px;
+}
+
+
+
+.semi1{
+    width: 250px;
+    height: 150px;
+    background-color: rgb(18, 193, 18); 
+    border-top-left-radius: 150px; 
+    border-top-right-radius: 150px;
+}
+
+.semi2{
+    width: 200px;
+    height: 125px;
+    transform: translate(-113%, 20%);
+    background-color:white; 
+    border-top-left-radius: 150px; 
+    border-top-right-radius: 150px;
+}
+
+.semi3{
+    width: 250px;
+    height: 150px;
+    background-color: rgb(167, 193, 18); 
+    border-top-left-radius: 150px; 
+    border-top-right-radius: 150px;
+}
+
+.semi4{
+    width: 200px;
+    height: 125px;
+    transform: translate(-113%, 20%);
+    background-color: white; 
+    border-top-left-radius: 150px; 
+    border-top-right-radius: 150px;
+}
+
+/* RECTANGLES */
+.rectangles{
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.rect1{
+    width: 50px;
+    height: 100px;
+    background-color: rgb(1, 1, 72);
+}
+
+.rect2{
+    width: 50px;
+    height: 120px;
+    background-color: rgb(2, 2, 90);
+}
+
+.rect3{
+    width: 50px;
+    height: 150px;
+    background-color: rgb(3, 3, 154);
+}
+
+.rect4{
+    width: 50px;
+    height: 100px;
+    background-color: rgb(0, 0, 195);
+}
+
+.rect5{
+    width: 50px;
+    height: 110px;
+    background-color: rgb(0, 0, 255);
+}
+
+.rect6{
+    width: 50px;
+    height: 130px;
+    background-color: rgb(47, 47, 246);
+}
+
+.rect7{
+    width: 50px;
+    height: 160px;
+    background-color: rgb(89, 89, 246);
+}
+
+.rect8{
+    width: 50px;
+    height: 80px;
+    background-color: rgb(114, 114, 251);
+}
+
+/* CIRCLE */
+
+.circles{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: 5%; */
+}
+
+.circ1{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(90, 252, 9);
+    border-radius: 50%;
+    margin-bottom: 5%;
+}
+
+.circ2{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(247, 199, 25);
+    border-radius: 50%;
+    margin-bottom: 5%;
+}
+
+.circ3{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(244, 73, 11);
+    border-radius: 50%;
+}
+
+.circ4{
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 50%;
+    transform: translate(0%, -525%);
+}
+
+.circ5{
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 50%;
+    transform: translate(0%, -420%);
+}
+
+.circ6{
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 50%;
+    transform: translate(0%, -316%);
+}
