@@ -1,0 +1,304 @@
+
+/* GENERAL */
+* {
+    margin: 0px;
+    padding: 0px;
+  
+}
+
+h1{
+    font-size: 45px;
+}
+
+h2{
+    font-size: 35px;
+}
+
+h3{
+    font-size: 25px;
+}
+
+p{
+    font-size: 20px;
+}
+
+/* HEADER */
+
+header{
+    height: 100px;
+    background-color: rgba(145, 142, 142, 1);
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+nav >*{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    font-size: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+}
+
+nav li{
+    margin-left: 180px;
+    margin-right: 80px;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+/* MAIN */
+
+.banner-principal {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 10px; */
+}
+
+
+.img-container, .desp-banner{
+    display: flex;
+    flex-direction: row;
+    /* margin: 10px; */
+}
+
+.img-container{
+    position: relative;
+    width: 100%;
+}
+
+.img-container img{
+    width: 100%;
+    height: auto; 
+}
+
+.texto-banner{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    left: 35%;
+    width: 60%;
+    height: 40%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+
+    text-align: center;
+    justify-content: center;
+
+    /* Color */
+    background-color: rgba(8, 99, 246, 0.438);
+    color: white;
+}
+
+.texto-banner p{
+    font-size: 30px;
+}
+
+.formulario-banner{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 70%;
+    top: 50%;
+    left: 78%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(188, 185, 185, 0.858);
+    padding: 10px;
+    text-align: center;
+    justify-content: space-between;
+    
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: 100px;
+
+}
+
+.form-parts{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.form-parts input{
+    width: 300px;
+    height: 30px;
+}
+
+button{
+    background-color: #007bff;
+    color: white;
+    font-size: 25px;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.box1{
+    text-align: center;
+    background-color: white;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.box1 h2{
+    text-align: center;
+    padding: 10px;
+}
+
+.box1 p{
+    text-align: left;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+
+@media(min-width:400px) and (max-width: 1000px){
+
+    h1{
+        font-size: 25px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    p{
+        font-size: 10px;
+    }
+
+    .header{
+        padding: 0 10px;
+    }
+
+    nav > *{
+        font-size: 10px;
+    }
+
+    nav li{
+        margin-left: 50px;
+        margin-right: 20px;
+    }
+
+    .texto-banner p{
+        font-size: 15px;
+    }
+
+    .formulario-banner p{
+        font-size: 0.9rem;
+    }
+
+    .texto-banner{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        height: 50%;
+        width: 50%;
+        top: 50%;
+        left: 28%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(8, 99, 246, 0.438);
+        padding: 10px;
+    
+
+        text-align: center;
+        justify-content: center;
+    }
+
+    .formulario-banner{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        height: 70%;
+        top: 50%;
+        left: 78%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(188, 185, 185, 0.858);
+        padding: 10px;
+        text-align: center;
+        justify-content: space-between;
+        
+    }
+    
+    .form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+        margin-top: 5px;
+    
+    }
+    
+    .form-parts{
+        margin-bottom: 1px;
+        font-size: 15px;
+    }
+    
+    .form-parts input{
+        width: 120px;
+        height: 10px;
+    }
+    
+    button{
+        background-color: #007bff;
+        color: white;
+        font-size: 10px;
+        border: none;
+        padding: 5px;
+        margin: 5px;
+        cursor: pointer;
+        width: 120px;
+    }
+    
+    .box1{
+        text-align: center;
+        background-color: white;
+        margin-top: 15px;
+        margin-left: 20px;
+    }
+    
+    .box1 h2{
+        text-align: center;
+        padding: 10px;
+    
+        margin-left: 5%;
+    }
+    
+    .box1 p{
+        text-align: left;
+        padding: 10px;
+        margin: 10px;
+    }
+    
+
+}
